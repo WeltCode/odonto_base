@@ -1,3 +1,5 @@
+import PoweredByWeltBrave from './branding/PoweredByWeltBrave'
+
 const LINKS = [
   { label: 'Funciones',     href: '#features' },
   { label: 'Por rol',       href: '#roles' },
@@ -43,13 +45,16 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <p className="text-[0.75rem] text-white/30">
-            © 2026 odonto_base — Proyecto open source bajo licencia MIT.
-          </p>
-          <p className="text-[0.75rem] text-white/25">
-            Datos de muestra incluidos para demostración.
-          </p>
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="flex flex-col gap-1">
+            <p className="text-[0.75rem] text-white/30">
+              © 2026 odonto_base — Proyecto open source bajo licencia MIT.
+            </p>
+            <p className="text-[0.75rem] text-white/25">
+              Datos de muestra incluidos para demostración.
+            </p>
+          </div>
+          <PoweredByWeltBrave className="shrink-0" />
         </div>
 
       </div>
