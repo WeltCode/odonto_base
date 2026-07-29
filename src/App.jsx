@@ -1,0 +1,26 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Stats from './components/Stats'
+import FeatureRail from './components/FeatureRail'
+import Roles from './components/Roles'
+import HowItWorks from './components/HowItWorks'
+import OpenSource from './components/OpenSource'
+import CTA from './components/CTA'
+import Footer from './components/Footer'
+import './App.css'
+
+export default function App() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Stats />
+      <FeatureRail />
+      <Roles />
+      <HowItWorks />
+      <OpenSource />
+      <CTA />
+      <Footer />
+    </>
+  )
+}

@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink:        #1A3FA8;
+  --color-ink-light:  #2B5CE6;
+  --color-ink-wash:   #EEF3FF;
+  --color-ink-deep:   #0F2570;
+  --color-hero-dark:  #04112E;
+  --color-stamp:      #C8281C;
+  --color-stamp-wash: #FEF2F2;
+  --color-ground:     #FFFFFF;
+  --color-ground-alt: #F5F7FA;
+  --color-ruled:      #E2E8F0;
+  --color-ruled-deep: #CBD5E1;
+  --color-text-1:     #0A0F1E;
+  --color-text-2:     #374151;
+  --color-text-3:     #6B7280;
+  --color-ok-bg:      #DCFCE7;
+  --color-ok-fg:      #166534;
+  --color-warn-bg:    #FEF9C3;
+  --color-warn-fg:    #854D0E;
+  --font-display:     'Epilogue', system-ui, sans-serif;
+  --font-body:        'Inter', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #0A0F1E;
+  background: #fff;
+  overflow-x: hidden;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ruled-bg {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px, transparent 39px,
+    #E2E8F0 39px, #E2E8F0 40px
+  );
+}
+
+/* ruled-dark — clinical ruled lines on dark surfaces (world-consistent motif) */
+.ruled-dark {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px, transparent 39px,
+    rgba(255,255,255,0.042) 39px, rgba(255,255,255,0.042) 40px
+  );
+}
+
+/* ── KEYFRAMES ──────────────────────────────────── */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up       { animation: fade-up 0.65s ease-out both; }
+.fade-up-delay { animation: fade-up 0.65s 0.18s ease-out both; }
+
+/* Hero headline — lines stagger in with blur */
+@keyframes line-in {
+  from { opacity: 0; transform: translateY(32px); filter: blur(8px); }
+  to   { opacity: 1; transform: translateY(0);   filter: blur(0); }
+}
+
+/* Floating card in hero */
+@keyframes float {
+  0%, 100% { transform: translateY(0)     rotate(0deg); }
+  40%       { transform: translateY(-14px) rotate(0.4deg); }
+  72%       { transform: translateY(-7px)  rotate(-0.2deg); }
+}
+.float { animation: float 6s cubic-bezier(.45,.05,.55,.95) infinite; }
+
+/* Scroll-down indicator — pendulum fade */
+@keyframes scroll-hint {
+  0%, 100% { transform: translateY(0);   opacity: 0.8; }
+  50%       { transform: translateY(7px); opacity: 0.35; }
+}
+.scroll-hint { animation: scroll-hint 1.9s ease-in-out infinite; }
+
+/* CTA button pulse ring (border + scale — no box-shadow) */
+@keyframes btn-ring {
+  from { transform: scale(1);    opacity: 0.55; }
+  to   { transform: scale(1.28); opacity: 0; }
+}
+.btn-pulse-wrap { position: relative; }
+.btn-pulse-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 4px;
+  animation: btn-ring 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
+/* Stats counter entrance */
+@keyframes stat-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Section entrance (generic) */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── DELIGHT KEYFRAMES ─────────────────────────── */
+
+/* Live system indicator — pulsing presence dot */
+@keyframes live-dot {
+  0%, 100% { opacity: 1;   transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.8); }
+}
+.live-dot { animation: live-dot 1.6s ease-in-out infinite; }
+
+/* Clinical stamp — step number boxes enter as rubber stamps */
+@keyframes stamp {
+  0%   { opacity: 0; transform: scale(1.45); }
+  68%  { opacity: 1; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Verified badge — snaps in after counter completes */
+@keyframes badge-stamp {
+  0%   { opacity: 0; transform: scale(0.65) translateY(5px); }
+  70%  { opacity: 1; transform: scale(1.04) translateY(-1px); }
+  100% { opacity: 1; transform: scale(1)    translateY(0); }
+}
