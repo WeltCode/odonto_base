@@ -132,7 +132,7 @@ export default function Navbar() {
             aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
             aria-expanded={open}
             onClick={() => setOpen(o => !o)}
-            className="md:hidden flex flex-col justify-center items-center gap-[5px] w-9 h-9 ml-0.5 rounded-[2px]"
+            className="md:hidden flex flex-col justify-center items-center gap-[5px] w-11 h-11 -mr-1 rounded-[2px]"
           >
             {[0, 1, 2].map(i => (
               <span
