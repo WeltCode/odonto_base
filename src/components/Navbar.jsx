@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useDemoModal } from '../context/DemoModalContext'
 
 const NAV_LINKS = [
   { label: 'Funciones',     href: '#features' },
@@ -8,6 +9,7 @@ const NAV_LINKS = [
 ]
 
 export default function Navbar() {
+  const { openModal } = useDemoModal()
   const [scrolled,  setScrolled]  = useState(false)
   const [progress,  setProgress]  = useState(0)
   const [open,      setOpen]      = useState(false)
@@ -106,8 +108,9 @@ export default function Navbar() {
           </a>
 
           {/* CTA */}
-          <a
-            href="#cta"
+          <button
+            type="button"
+            onClick={openModal}
             className="flex items-center gap-1.5 text-[0.875rem] font-semibold px-4 py-[7px] rounded-[2px] transition-all duration-150"
             style={scrolled
               ? { background: '#1A3FA8', color: 'white' }
@@ -121,7 +124,7 @@ export default function Navbar() {
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
               <path d="M2 6.5h9M7.5 2.5l4 4-4 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </a>
+          </button>
 
           {/* Mobile hamburger */}
           <button

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useDemoModal } from '../context/DemoModalContext'
 
 const APPOINTMENTS = [
   { time: '09:00', dur: '30 min', name: 'María González',  sub: 'Limpieza · Dr. Ramírez',  badge: 'Confirmada', cls: 'bg-ok-bg text-ok-fg' },
@@ -142,6 +143,7 @@ const HEADLINE_LINES = [
 ]
 
 export default function Hero() {
+  const { openModal } = useDemoModal()
   return (
     <section
       id="hero"
@@ -189,15 +191,16 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-3.5 mb-10" style={{ animation: 'fade-up 0.6s 0.68s ease-out both' }}>
-              <a
-                href="#cta"
+              <button
+                type="button"
+                onClick={openModal}
                 className="inline-flex items-center gap-2 bg-white text-ink font-bold text-[0.9375rem] px-7 py-3.5 rounded-[2px] hover:bg-ink-wash transition-all duration-150 hover:-translate-y-px"
               >
-                Solicitar acceso
+                Solicitar demo
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
                   <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </a>
+              </button>
               <a
                 href="https://github.com/WeltCode/odonto_base"
                 target="_blank" rel="noopener noreferrer"

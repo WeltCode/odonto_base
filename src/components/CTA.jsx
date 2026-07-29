@@ -1,4 +1,7 @@
+import { useDemoModal } from '../context/DemoModalContext'
+
 export default function CTA() {
+  const { openModal } = useDemoModal()
   return (
     <section
       id="cta"
@@ -53,15 +56,16 @@ export default function CTA() {
         <div className="flex flex-wrap justify-center gap-4">
           {/* Pulsing primary */}
           <div className="btn-pulse-wrap rounded-[2px]">
-            <a
-              href="#"
+            <button
+              type="button"
+              onClick={openModal}
               className="relative inline-flex items-center gap-2 bg-white text-ink font-bold text-[1rem] px-8 py-4 rounded-[2px] hover:bg-ink-wash transition-all duration-150 hover:-translate-y-px"
             >
               Solicitar demo gratuita
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
                 <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </a>
+            </button>
           </div>
 
           <a

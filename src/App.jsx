@@ -7,11 +7,12 @@ import HowItWorks from './components/HowItWorks'
 import Platform from './components/Platform'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import { DemoModalProvider } from './context/DemoModalContext'
 import './App.css'
 
 export default function App() {
   return (
-    <>
+    <DemoModalProvider>
       <Navbar />
       <Hero />
       <Stats />
@@ -21,6 +22,6 @@ export default function App() {
       <Platform />
       <CTA />
       <Footer />
-    </>
+    </DemoModalProvider>
   )
 }
