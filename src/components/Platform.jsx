@@ -21,8 +21,8 @@ const CARDS = [
         <path d="M7 17h6M10 13v4"/>
       </svg>
     ),
-    title: 'Tu marca, completamente',
-    body: 'Personaliza logo, colores y textos para que la plataforma lleve el nombre de tu clínica. Tus pacientes ven tu identidad, no la nuestra.',
+    title: 'Tu marca y tu subdominio',
+    body: 'Tu logo, tus colores y tu propio subdominio (tuclinica.odonto-base.app). Tus pacientes acceden a la clínica con tu identidad, no a un software genérico.',
   },
   {
     icon: (

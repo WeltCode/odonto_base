@@ -31,7 +31,7 @@ export default function CTA() {
           style={{ background: 'rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.6)', border: '1px solid rgba(255,255,255,0.15)' }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-stamp shrink-0" />
-          Empieza hoy — es gratis
+          Solicita tu demo gratuita
         </div>
 
         <h2
@@ -46,7 +46,7 @@ export default function CTA() {
           className="text-[1.0625rem] leading-[1.65] mx-auto mb-12"
           style={{ color: 'rgba(255,255,255,0.65)', maxWidth: '46ch' }}
         >
-          Solicita acceso a odonto_base y lleva la gestión dental al siguiente nivel — con tu marca, bajo tu control, sin costos de licencia permanentes.
+          Reserva una demo de odonto_base y te mostramos tu clínica funcionando — con tu marca y tu subdominio. Después, una suscripción mensual sin sorpresas y sin instalaciones.
         </p>
 
         {/* CTAs — primary pulses */}
@@ -57,7 +57,7 @@ export default function CTA() {
               href="#"
               className="relative inline-flex items-center gap-2 bg-white text-ink font-bold text-[1rem] px-8 py-4 rounded-[2px] hover:bg-ink-wash transition-all duration-150 hover:-translate-y-px"
             >
-              Solicitar acceso gratuito
+              Solicitar demo gratuita
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
                 <path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

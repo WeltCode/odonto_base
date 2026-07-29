@@ -3,18 +3,18 @@ import { useEffect, useRef } from 'react'
 const STEPS = [
   {
     num: '1',
-    title: 'Clona y configura',
-    desc: 'Descarga odonto_base desde GitHub, configura tu clínica con nombre, logo y datos de contacto. Listo en minutos con la guía de instalación incluida.',
+    title: 'Solicita tu acceso',
+    desc: 'Cuéntanos sobre tu clínica y elige tu plan de suscripción. Sin descargas ni instalaciones: nosotros nos encargamos de todo el montaje técnico.',
   },
   {
     num: '2',
-    title: 'Personaliza tu marca',
-    desc: 'Adapta colores, logo y textos para que la plataforma sea completamente tuya. Tus pacientes verán tu clínica, no un software genérico.',
+    title: 'Recibe tu clínica personalizada',
+    desc: 'Preparamos tu propia versión con tu logo, tus colores y tu subdominio exclusivo (p. ej. tuclinica.odonto-base.app). Tu plataforma, con tu identidad, lista para trabajar.',
   },
   {
     num: '3',
-    title: 'Invita a tu equipo',
-    desc: 'Agrega dentistas, recepcionistas y staff. Cada usuario accede solo a lo que le corresponde según su rol, desde el primer día.',
+    title: 'Invita a tu equipo y empieza',
+    desc: 'Agrega dentistas, recepcionistas y staff. Cada usuario accede solo a lo que le corresponde según su rol, desde el navegador y desde el primer día.',
   },
 ]
 
@@ -96,7 +96,7 @@ export default function HowItWorks() {
           Tu clínica online en tres pasos
         </h2>
         <p className="text-[1.0625rem] text-text-2 leading-[1.65] mb-14" style={{ maxWidth: '54ch' }}>
-          Sin meses de implementación ni contratos complicados. Una base lista para usar, personalizar y crecer.
+          Sin meses de implementación ni contratos complicados. Nosotros ponemos en marcha tu plataforma personalizada; tú solo entras y trabajas.
         </p>
 
         <div ref={sectionRef} className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 relative">
