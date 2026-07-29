@@ -4,7 +4,7 @@ const NAV_LINKS = [
   { label: 'Funciones',     href: '#features' },
   { label: 'Por rol',       href: '#roles' },
   { label: 'Cómo funciona', href: '#how-it-works' },
-  { label: 'Open source',   href: '#open-source' },
+  { label: 'Plataforma',    href: '#plataforma' },
 ]
 
 export default function Navbar() {
@@ -63,7 +63,7 @@ export default function Navbar() {
               : { background: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)', border: '1px solid rgba(255,255,255,0.2)' }
             }
           >
-            open source
+            en la nube
           </span>
         </a>
 

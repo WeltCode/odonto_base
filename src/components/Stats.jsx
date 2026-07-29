@@ -19,10 +19,10 @@ function useCountUp(target, duration, active) {
 }
 
 const STATS = [
-  { target: 500,   suffix: '+', label: 'Clínicas activas',      note: '[dato de muestra]', duration: 1600 },
-  { target: 98,    suffix: '%', label: 'Satisfacción media',    note: '[dato de muestra]', duration: 1400 },
-  { target: 12000, suffix: '+', label: 'Pacientes gestionados', note: '[dato de muestra]', duration: 1800, format: v => v >= 1000 ? `${(v / 1000).toFixed(1)}k` : v },
-  { target: 4.9,   suffix: '★', label: 'Valoración promedio',   note: '[dato de muestra]', duration: 1500 },
+  { target: 4,   suffix: '',   label: 'Módulos integrados',   duration: 1400 },
+  { target: 3,   suffix: '',   label: 'Roles con permisos',   duration: 1300 },
+  { target: 100, suffix: '%',  label: 'En la nube',           duration: 1600 },
+  { target: 24,  suffix: '/7', label: 'Acceso continuo',      duration: 1500 },
 ]
 
 function StatItem({ stat, active, delayMs }) {
@@ -53,8 +53,7 @@ function StatItem({ stat, active, delayMs }) {
       >
         {display}{stat.suffix}
       </span>
-      <span className="text-[0.9375rem] font-medium text-text-2">{stat.label}</span>
-      <span className="text-[0.5625rem] text-text-3 mt-1 tracking-wide">{stat.note}</span>
+      <span className="text-[0.9375rem] font-medium text-text-2 mt-1">{stat.label}</span>
 
       {/* DELIGHT: clinical verification badge appears after count completes */}
       {stamped && (

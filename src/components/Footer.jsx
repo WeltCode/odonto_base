@@ -4,7 +4,7 @@ const LINKS = [
   { label: 'Funciones',     href: '#features' },
   { label: 'Por rol',       href: '#roles' },
   { label: 'Cómo funciona', href: '#how-it-works' },
-  { label: 'Open source',   href: '#open-source' },
+  { label: 'Plataforma',    href: '#plataforma' },
   { label: 'GitHub',        href: 'https://github.com/WeltCode/odonto_base', external: true },
   { label: 'Documentación', href: '#' },
 ]
@@ -22,7 +22,7 @@ export default function Footer() {
               odonto<span className="text-stamp">_</span>base
             </div>
             <div className="text-[0.8125rem] text-white/40">
-              La plataforma dental open source.
+              La plataforma dental en la nube.
             </div>
           </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex flex-col gap-1">
             <p className="text-[0.75rem] text-white/30">
-              © 2026 odonto_base — Proyecto open source bajo licencia MIT.
+              © 2026 odonto_base — Plataforma de gestión para clínicas dentales.
             </p>
             <p className="text-[0.75rem] text-white/25">
               Datos de muestra incluidos para demostración.

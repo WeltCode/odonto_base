@@ -1,37 +1,37 @@
 # odonto_base
 
-**Landing page open source para una plataforma de gestión de clínicas dentales.**
+**Plataforma de gestión en la nube para clínicas dentales** — un servicio SaaS de [WeltBrave](https://weltbrave.com).
 
-`odonto_base` es una página de aterrizaje (marketing site) en español que presenta una plataforma —ficticia y personalizable— de gestión para clínicas dentales: agenda de citas, expedientes clínicos, gestión de personal y portal del paciente. Está pensada como base open source: clónala, ponle tu marca y publícala como tuya.
+`odonto_base` es una plataforma en español que centraliza la operación de una clínica dental: agenda de citas, expedientes clínicos, gestión de personal y portal del paciente. Se ofrece como **servicio gestionado por suscripción** — la clínica accede desde el navegador, con su propia marca, sin instalaciones ni servidores que administrar.
 
-> ⚠️ **Nota:** este repositorio es únicamente el **sitio web promocional**. Todos los datos que aparecen en pantalla (citas, estadísticas, expedientes) son **datos de muestra** hardcodeados y etiquetados como tales. No incluye backend ni la aplicación de gestión real.
+> **Estado actual:** este repositorio contiene por ahora el **sitio de presentación (landing)**. Los datos que aparecen en pantalla son de ejemplo. El desarrollo de la plataforma funcional (MVP: agenda + expedientes) está en marcha.
 
 ## Stack
 
 - **React 19** + **Vite 8** (HMR)
-- **Tailwind CSS 4** (vía `@tailwindcss/vite`, tokens de diseño definidos con `@theme` en [`src/index.css`](src/index.css))
+- **Tailwind CSS 4** (vía `@tailwindcss/vite`, tokens de diseño con `@theme` en [`src/index.css`](src/index.css))
 - **Oxlint** para linting
-- SPA de una sola página, sin router ni backend. Idioma: español.
+- SPA de una sola página. Idioma: español.
 
-## Secciones
+## Secciones de la landing
 
-La página se compone en [`src/App.jsx`](src/App.jsx) a partir de estos componentes:
+Se componen en [`src/App.jsx`](src/App.jsx):
 
 | Componente | Descripción |
 |---|---|
 | `Navbar`      | Barra fija con barra de progreso de scroll y menú móvil |
 | `Hero`        | Portada con odontograma decorativo y vista previa de la agenda |
-| `Stats`       | Métricas con contador animado al entrar en viewport |
+| `Stats`       | Métricas de la plataforma con contador animado |
 | `FeatureRail` | Las 4 funciones clave (citas, expedientes, personal, portal) en riel horizontal |
 | `Roles`       | Los 4 roles: dueño, dentista, recepcionista y paciente |
 | `HowItWorks`  | Puesta en marcha en 3 pasos |
-| `OpenSource`  | Licencia MIT, marca propia y arquitectura extensible |
+| `Platform`    | Propuesta de valor: plataforma gestionada, tu marca, seguridad |
 | `CTA`         | Llamada a la acción final |
-| `Footer`      | Pie con enlaces de navegación |
+| `Footer`      | Pie con enlaces y badge "Powered by WeltBrave" |
 
 ## Diseño
 
-Identidad visual "clínica/documental": líneas regladas tipo expediente, sellos de goma, un odontograma FDI como motivo recurrente. Paleta azul tinta con acento rojo. Tipografías **Epilogue** (títulos) e **Inter** (texto), servidas desde Google Fonts.
+Identidad visual "clínica/documental": líneas regladas tipo expediente, sellos de goma, un odontograma FDI como motivo recurrente. Paleta azul tinta con acento rojo. Tipografías **Epilogue** (títulos) e **Inter** (texto).
 
 ## Desarrollo
 
@@ -47,9 +47,9 @@ npm run lint     # ejecutar Oxlint
 
 ## Personalización
 
-- **Marca y colores:** edita los tokens en [`src/index.css`](src/index.css) (`--color-ink`, `--color-stamp`, tipografías, etc.).
-- **Textos y datos:** el contenido vive en constantes al inicio de cada componente en [`src/components/`](src/components/).
+- **Marca y colores:** tokens en [`src/index.css`](src/index.css) (`--color-ink`, `--color-stamp`, tipografías).
+- **Textos y datos:** constantes al inicio de cada componente en [`src/components/`](src/components/).
 
-## Licencia
+---
 
-MIT.
+© 2026 WeltBrave. Proyecto privado. Todos los derechos reservados.

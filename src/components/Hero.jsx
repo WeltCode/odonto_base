@@ -162,7 +162,7 @@ export default function Hero() {
               style={{ background: 'rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.75)', animation: 'fade-up 0.5s ease-out both' }}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-stamp shrink-0" />
-              Plataforma dental open source
+              Plataforma dental en la nube
             </div>
 
             <h1 id="hero-heading" className="font-display font-black leading-[1.03] tracking-[-0.045em] mb-7"
@@ -185,7 +185,7 @@ export default function Hero() {
               className="text-[1.0625rem] leading-[1.7] mb-10"
               style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '46ch', animation: 'fade-up 0.7s 0.58s ease-out both' }}
             >
-              odonto_base es la base que las clínicas dentales merecen: citas, expedientes, personal y portal del paciente — todo en uno, personalizable con tu marca, sin costos de licencia.
+              odonto_base es la plataforma que las clínicas dentales merecen: citas, expedientes, personal y portal del paciente — todo en uno, en la nube, personalizable con tu marca y sin instalaciones.
             </p>
 
             <div className="flex flex-wrap gap-3.5 mb-10" style={{ animation: 'fade-up 0.6s 0.68s ease-out both' }}>
@@ -214,7 +214,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-wrap items-center gap-5" style={{ animation: 'fade-up 0.6s 0.76s ease-out both' }}>
-              {['Licencia MIT', 'Tu marca, tu dominio', 'Multirrol'].map(item => (
+              {['Todo en la nube', 'Tu marca, tu dominio', 'Multirrol'].map(item => (
                 <div key={item} className="flex items-center gap-1.5 text-[0.8125rem] font-medium" style={{ color: 'rgba(255,255,255,0.55)' }}>
                   <span className="w-3.5 h-3.5 rounded-full bg-white/20 text-white text-[0.45rem] font-black flex items-center justify-center shrink-0">✓</span>
                   {item}

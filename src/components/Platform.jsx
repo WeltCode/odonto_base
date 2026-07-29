@@ -4,11 +4,12 @@ const CARDS = [
   {
     icon: (
       <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M10 3v14M3 7l7-4 7 4"/><path d="M5 9l-2 4h4L5 9zM15 9l-2 4h4l-2-4z"/><path d="M3 17h14"/>
+        <path d="M6 15a3.5 3.5 0 0 1-.5-6.96A4.5 4.5 0 0 1 14 7.2 3.4 3.4 0 0 1 15 14H6z"/>
+        <path d="M10 11v4M8 13l2 2 2-2"/>
       </svg>
     ),
-    title: 'Licencia MIT',
-    body: 'Código libre para usar, modificar y distribuir sin restricciones. Construye sobre la base, agrégale lo que necesites, y distribúyelo como tuyo.',
+    title: 'Sin instalaciones ni servidores',
+    body: 'Nosotros hospedamos y mantenemos todo. Tú entras desde el navegador, en cualquier dispositivo, y empiezas a trabajar. Las actualizaciones y mejoras llegan solas.',
   },
   {
     icon: (
@@ -21,20 +22,21 @@ const CARDS = [
       </svg>
     ),
     title: 'Tu marca, completamente',
-    body: 'Personaliza logos, colores y textos para que la plataforma lleve el nombre de tu clínica. Tus pacientes ven tu identidad, no la nuestra.',
+    body: 'Personaliza logo, colores y textos para que la plataforma lleve el nombre de tu clínica. Tus pacientes ven tu identidad, no la nuestra.',
   },
   {
     icon: (
       <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M15.5 4.5a3 3 0 0 0-4 4L4 16a1.5 1.5 0 0 0 2 2l7.5-7.5a3 3 0 0 0 4-4l-2 2-1.5-1.5 2-2z"/>
+        <path d="M10 2l6 2.5v4C16 13 13.5 16 10 18 6.5 16 4 13 4 8.5v-4L10 2z"/>
+        <path d="M7.5 10l1.8 1.8L13 8"/>
       </svg>
     ),
-    title: 'Extensible por diseño',
-    body: 'Arquitectura modular pensada para crecer. Agrega módulos, integra sistemas externos o adapta flujos específicos a tu práctica sin perder la base.',
+    title: 'Seguridad de nivel clínico',
+    body: 'Datos cifrados, copias de seguridad automáticas y control de accesos por rol. La información de tus pacientes protegida y siempre disponible.',
   },
 ]
 
-export default function OpenSource() {
+export default function Platform() {
   const gridRef = useRef(null)
 
   useEffect(() => {
@@ -60,24 +62,24 @@ export default function OpenSource() {
 
   return (
     <section
-      id="open-source"
-      aria-labelledby="oss-heading"
+      id="plataforma"
+      aria-labelledby="platform-heading"
       className="py-24 bg-ink"
     >
       <div className="max-w-screen-xl mx-auto px-5 md:px-8">
         <div className="inline-flex items-center gap-2.5 text-[0.6875rem] font-bold tracking-[0.12em] uppercase text-white/55 mb-4">
           <span className="w-5 h-[1.5px] bg-white/40" />
-          Open source
+          Plataforma
         </div>
         <h2
-          id="oss-heading"
+          id="platform-heading"
           className="font-display font-extrabold tracking-[-0.035em] leading-[1.1] text-white mb-4"
           style={{ fontSize: 'clamp(1.875rem, 3.5vw, 2.75rem)' }}
         >
-          Construido para ser tuyo,<br />no rentado.
+          Tú te dedicas a tus pacientes,<br />nosotros a la tecnología.
         </h2>
         <p className="text-[1.0625rem] text-white/70 leading-[1.65] mb-12" style={{ maxWidth: '54ch' }}>
-          odonto_base nació como base open source porque las clínicas dentales merecen tecnología sin ataduras — sin suscripciones perpetuas, sin vendor lock-in.
+          odonto_base es una plataforma gestionada en la nube: sin servidores que administrar, sin instalaciones y sin sorpresas técnicas. Tú te enfocas en tu clínica, nosotros en que todo funcione.
         </p>
 
         <div

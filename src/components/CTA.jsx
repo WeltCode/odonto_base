@@ -80,8 +80,8 @@ export default function CTA() {
           className="text-[0.75rem] mt-10 pt-8"
           style={{ color: 'rgba(255,255,255,0.3)', borderTop: '1px solid rgba(255,255,255,0.1)' }}
         >
-          Licencia MIT · Sin costos de licencia · Código abierto ·{' '}
-          <em>Los datos mostrados son de muestra — reemplázalos con información real de tu clínica.</em>
+          Plataforma en la nube · Con tu marca · Soporte incluido ·{' '}
+          <em>Los datos mostrados son de ejemplo — tu clínica gestiona los suyos.</em>
         </p>
       </div>
     </section>

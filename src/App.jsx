@@ -4,7 +4,7 @@ import Stats from './components/Stats'
 import FeatureRail from './components/FeatureRail'
 import Roles from './components/Roles'
 import HowItWorks from './components/HowItWorks'
-import OpenSource from './components/OpenSource'
+import Platform from './components/Platform'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import './App.css'
@@ -18,7 +18,7 @@ export default function App() {
       <FeatureRail />
       <Roles />
       <HowItWorks />
-      <OpenSource />
+      <Platform />
       <CTA />
       <Footer />
     </>
